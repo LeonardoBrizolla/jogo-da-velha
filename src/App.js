@@ -1,4 +1,5 @@
 import { Card } from './objects/Card';
+import { Player } from './objects/Player';
 import Header from './components/Header';
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Header />
       <Card />
+      <Player />
     </>
   );
 };
