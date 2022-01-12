@@ -1,24 +1,11 @@
-import { Card } from './objects/Card';
-import { Player } from './objects/Player';
+import { Hashtag } from './components/Hashtag';
 import Header from './components/Header';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Card>
-        <Player player="x" />
-        <Player player="o" />
-        <Player player="x" />
-
-        <Player player="o" />
-        <Player player="x" />
-        <Player player="o" />
-
-        <Player player="x" />
-        <Player player="o" />
-        <Player player="x" />
-      </Card>
+      <Hashtag />
     </>
   );
 };
