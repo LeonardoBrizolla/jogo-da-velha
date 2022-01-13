@@ -7,7 +7,7 @@ const App = () => (
   <main className="app">
     <Header />
     <Hashtag />
-    <Label content="Mostrar eventos" />
+    <Label content="Mostrar Eventos" />
   </main>
 );
 
