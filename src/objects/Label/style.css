@@ -1,6 +1,6 @@
 .label {
   color: var(--color-fourth);
-  font-size: 14px;
+  font-size: var(--size-small);
   font-weight: bold;
   display: inline-block;
 }

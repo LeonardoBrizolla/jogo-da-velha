@@ -16,9 +16,10 @@
   margin-bottom: 40px;
 }
 
-.app > .label > .checkbox {
+.app > .input {
   margin-right: 6px;
   width: 20px;
   height: 20px;
   vertical-align: sub;
+  display: inline-block;
 }

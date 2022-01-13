@@ -1,9 +1,7 @@
 import './style.css';
-import { Checkbox } from '../Checkbox';
 
-export const Label = ({ content }) => (
-  <label className="label">
-    <Checkbox />
+export const Label = ({ content, htmlFor }) => (
+  <label htmlFor={htmlFor} className="label">
     {content}
   </label>
 );
