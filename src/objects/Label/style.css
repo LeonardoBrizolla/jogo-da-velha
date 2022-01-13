@@ -2,5 +2,9 @@
   color: var(--color-fourth);
   font-size: var(--size-small);
   font-weight: bold;
-  display: inline-block;
+}
+
+.label::selection {
+  background-color: var(--color-first);
+  color: var(--color-zero);
 }
