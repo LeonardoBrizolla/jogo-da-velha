@@ -1,4 +1,5 @@
-import './style.css';
+import './styles.css';
+
 import playerXSVG from '../../img/player-x.svg';
 import playerOSVG from '../../img/player-o.svg';
 

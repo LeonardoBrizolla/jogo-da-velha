@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 
 export const Sobre = ({ content }) => (
   <a href="#to-do" className="action">

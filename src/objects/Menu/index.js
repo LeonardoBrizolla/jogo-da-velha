@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 
 export const Menu = () => (
   <a href="#to-do" className="menu">

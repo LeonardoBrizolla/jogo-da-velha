@@ -1,7 +1,9 @@
-import './style.css';
+import './styles.css';
+
 import { Logo } from '../../objects/Logo';
 import { Sobre } from '../../objects/Sobre';
 import { Menu } from '../../objects/Menu';
+
 import logoSVG from '../../img/logo.svg';
 
 export const Header = () => (

@@ -1,4 +1,5 @@
-import './style.css';
+import './styles.css';
+
 import { Card } from '../../objects/Card';
 import { Player } from '../../objects/Player';
 
