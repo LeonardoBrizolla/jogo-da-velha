@@ -2,7 +2,3 @@ body {
   background-color: var(--color-second);
   font-family: 'Montserrat', sans-serif;
 }
-
-input[type='checkbox'] {
-  cursor: pointer;
-}
