@@ -1,5 +1,3 @@
-const Logo = ({ srcImage, textAlt }) => {
-  return <img src={srcImage} alt={textAlt} />;
-};
-
-export default Logo;
+export const Logo = ({ srcImage, textAlt }) => (
+  <img src={srcImage} alt={textAlt} />
+);

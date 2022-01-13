@@ -1,11 +1,7 @@
 import './style.css';
 
-const Sobre = ({ content = '' }) => {
-  return (
-    <a href="#to-do" className="action">
-      {content}
-    </a>
-  );
-};
-
-export default Sobre;
+export const Sobre = ({ content }) => (
+  <a href="#to-do" className="action">
+    {content}
+  </a>
+);

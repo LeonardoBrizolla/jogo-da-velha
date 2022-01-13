@@ -1,11 +1,7 @@
 import './style.css';
 
-const Menu = () => {
-  return (
-    <a className="menu" href="#to-do">
-      <span className="center">Menu</span>
-    </a>
-  );
-};
-
-export default Menu;
+export const Menu = () => (
+  <a href="#to-do" className="menu">
+    <span className="center">Menu</span>
+  </a>
+);

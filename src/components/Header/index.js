@@ -1,17 +1,13 @@
-import Logo from '../../objects/Logo';
-import ImgLogo from '../../img/logo.svg';
-import Sobre from '../../objects/Sobre';
-import Menu from '../../objects/Menu';
 import './style.css';
+import { Logo } from '../../objects/Logo';
+import { Sobre } from '../../objects/Sobre';
+import { Menu } from '../../objects/Menu';
+import logoSVG from '../../img/logo.svg';
 
-const Header = () => {
-  return (
-    <header className="header">
-      <Logo srcImage={ImgLogo} textAlt="Logo CollabCode" />
-      <Sobre content="Sobre" />
-      <Menu />
-    </header>
-  );
-};
-
-export default Header;
+export const Header = () => (
+  <header className="header">
+    <Logo srcImage={logoSVG} textAlt="Logo CollabCode" />
+    <Sobre content="Sobre" />
+    <Menu />
+  </header>
+);

@@ -9,7 +9,7 @@ export const Player = ({ player }) => {
   players['o'] = playerOSVG;
 
   return (
-    <button className="btn-player">
+    <button className="player">
       <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />
     </button>
   );

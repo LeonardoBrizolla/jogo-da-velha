@@ -1,6 +1,6 @@
 import './App.css';
+import { Header } from './components/Header';
 import { Hashtag } from './components/Hashtag';
-import Header from './components/Header';
 
 const App = () => (
   <main className="app">

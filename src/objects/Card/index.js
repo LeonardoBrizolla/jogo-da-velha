@@ -1,5 +1,5 @@
 import './style.css';
 
-export const Card = ({ children }) => {
-  return <article className="card">{children}</article>;
-};
+export const Card = ({ children }) => (
+  <article className="card">{children}</article>
+);
