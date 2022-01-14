@@ -8,15 +8,13 @@ import { Checkbox } from './objects/Checkbox';
 import { Header } from './components/Header';
 import { Hashtag } from './components/Hashtag';
 
-import logoLightSVG from './img/logo-light.svg';
-
 const App = () => (
   <main className="app">
     <Header />
     <Hashtag />
     <Checkbox id="show" value="show" content="Mostrar Eventos" />
     <About>
-      <LogoCollab srcImage={logoLightSVG} />
+      <LogoCollab light />
       <Link content="Sobre" className="-light" />
       <IconClose />
     </About>
