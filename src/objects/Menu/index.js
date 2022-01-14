@@ -1,9 +1,7 @@
 import './styles.css';
 
-const handleClick = () => console.log('click menu');
-
-export const Menu = () => (
-  <a href="#to-do" className="menu" onClick={handleClick}>
+export const Menu = ({ onClick }) => (
+  <a href="#to-do" className="menu" onClick={onClick}>
     <span className="center">Menu</span>
   </a>
 );

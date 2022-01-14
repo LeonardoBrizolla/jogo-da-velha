@@ -4,10 +4,10 @@ import { LogoCollab } from '../../objects/LogoCollab';
 import { AboutLink } from '../../objects/AboutLink';
 import { Menu } from '../../objects/Menu';
 
-export const Header = () => (
+export const Header = ({ onClick }) => (
   <header className="header">
     <LogoCollab />
-    <AboutLink content="Sobre" />
-    <Menu />
+    <AboutLink content="Sobre" onClick={onClick} />
+    <Menu onClick={onClick} />
   </header>
 );

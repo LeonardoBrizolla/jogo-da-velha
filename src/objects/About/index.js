@@ -1,5 +1,5 @@
 import './styles.css';
 
-export const About = ({ children }) => (
-  <article className="about">{children}</article>
+export const About = ({ children, className }) => (
+  <article className={`about ${className}`}>{children}</article>
 );
