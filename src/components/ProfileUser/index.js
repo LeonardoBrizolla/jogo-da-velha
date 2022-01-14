@@ -1,13 +1,13 @@
 import './styles.css';
-import AvatarProfile from '../../img/avatar-profile.jpeg';
+import AvatarProfileJPEG from '../../img/avatar-profile.jpeg';
 
-import { AvatarProvider } from '../../objects/AvatarProfile';
+import { AvatarProfile } from '../../objects/AvatarProfile';
 
 export const ProfileUser = () => (
   <dl className="profile-user">
     <dd className="avatar">
-      <AvatarProvider
-        src={AvatarProfile}
+      <AvatarProfile
+        src={AvatarProfileJPEG}
         alt="Avatar profile Leonardo Brizolla"
       />
     </dd>
