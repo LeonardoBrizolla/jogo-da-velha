@@ -8,7 +8,6 @@
 .icon-close::before,
 .icon-close::after {
   content: '';
-  display: inline-block;
   width: 32px;
   height: 4px;
   background-color: var(--color-zero);
