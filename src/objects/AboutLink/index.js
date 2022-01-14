@@ -1,6 +1,6 @@
 import './styles.css';
 
-export const Sobre = ({ content }) => (
+export const AboutLink = ({ content }) => (
   <a href="#to-do" className="action">
     {content}
   </a>

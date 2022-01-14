@@ -1,7 +1,7 @@
 import './styles.css';
 
 import { Logo } from '../../objects/Logo';
-import { Sobre } from '../../objects/Sobre';
+import { AboutLink } from '../../objects/AboutLink';
 import { Menu } from '../../objects/Menu';
 
 import logoSVG from '../../img/logo.svg';
@@ -9,7 +9,7 @@ import logoSVG from '../../img/logo.svg';
 export const Header = () => (
   <header className="header">
     <Logo srcImage={logoSVG} textAlt="Logo CollabCode" />
-    <Sobre content="Sobre" />
+    <AboutLink content="Sobre" />
     <Menu />
   </header>
 );
