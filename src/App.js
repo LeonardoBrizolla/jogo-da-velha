@@ -1,12 +1,10 @@
 import './App.css';
 
 import { About } from './objects/About';
-import { Link } from './objects/Link';
-import { IconClose } from './objects/IconClose';
-import { LogoCollab } from './objects/LogoCollab';
 import { Checkbox } from './objects/Checkbox';
 import { Header } from './components/Header';
 import { Hashtag } from './components/Hashtag';
+import { HeaderInternal } from './components/HeaderInternal';
 
 const App = () => (
   <main className="app">
@@ -14,9 +12,7 @@ const App = () => (
     <Hashtag />
     <Checkbox id="show" value="show" content="Mostrar Eventos" />
     <About>
-      <LogoCollab light />
-      <Link content="Sobre" className="-light" />
-      <IconClose />
+      <HeaderInternal />
     </About>
   </main>
 );
