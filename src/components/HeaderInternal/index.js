@@ -1,3 +1,5 @@
+import './styles.css';
+
 import { Link } from '../../objects/Link';
 import { IconClose } from '../../objects/IconClose';
 import { LogoCollab } from '../../objects/LogoCollab';
