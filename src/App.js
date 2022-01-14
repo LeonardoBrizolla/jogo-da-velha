@@ -12,7 +12,7 @@ const App = () => (
     <Hashtag />
     <Checkbox id="show" value="show" content="Mostrar Eventos" />
     <About>
-      <Link content="Sobre" />
+      <Link content="Sobre" className="-light" />
     </About>
   </main>
 );

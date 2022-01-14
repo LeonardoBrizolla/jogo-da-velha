@@ -5,3 +5,7 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.link.-light {
+  color: var(--color-zero);
+}
