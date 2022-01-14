@@ -20,11 +20,31 @@ export const ProfileUser = () => (
     <dt className="title">Leonardo Brizolla</dt>
     <dd className="description">Desenvolvedor Web</dd>
     <dd>
-      <IconSocial src={GithubSVG} alt="Logo da Github" />
-      <IconSocial src={LinkedInSVG} alt="Logo da LinkedIn" />
-      <IconSocial src={TwitterSVG} alt="Logo da Twitter" />
-      <IconSocial src={FacebookSVG} alt="Logo da Facebook" />
-      <IconSocial src={InstagramSVG} alt="Logo da Instagram" />
+      <IconSocial
+        action="https://github.com/leonardobrizolla"
+        src={GithubSVG}
+        alt="Logo da Github"
+      />
+      <IconSocial
+        action="https://www.linkedin.com/in/leonardo-brizolla/"
+        src={LinkedInSVG}
+        alt="Logo da LinkedIn"
+      />
+      <IconSocial
+        action="https://twitter.com/leobrizolla55"
+        src={TwitterSVG}
+        alt="Logo da Twitter"
+      />
+      <IconSocial
+        action="https://www.facebook.com/leonardo.brizolla.10"
+        src={FacebookSVG}
+        alt="Logo da Facebook"
+      />
+      <IconSocial
+        action="https://www.instagram.com/leobrizolla55/"
+        src={InstagramSVG}
+        alt="Logo da Instagram"
+      />
     </dd>
   </dl>
 );
