@@ -1,5 +1,7 @@
+import './styles.css';
+
 export const IconClose = () => (
   <a href="" className="icon-close">
-    Fechar
+    <span className="content">Fechar</span>
   </a>
 );
