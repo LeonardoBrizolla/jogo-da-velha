@@ -19,7 +19,7 @@ export const ProfileUser = () => (
     </dd>
     <dt className="title">Leonardo Brizolla</dt>
     <dd className="description">Desenvolvedor Web</dd>
-    <dd>
+    <dd className="social">
       <IconSocial
         action="https://github.com/leonardobrizolla"
         src={GithubSVG}
