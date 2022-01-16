@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import { LayerDark } from "./objects/LayerDark";
-import { Checkbox } from "./objects/Checkbox";
+import { InputCheckbox } from "./objects/InputCheckbox";
 import { Header } from "./components/Header";
 import { Hashtag } from "./components/Hashtag";
 import { HeaderInternal } from "./components/HeaderInternal";
@@ -18,7 +18,7 @@ export const App = () => {
     <main className="app">
       <Header onClick={handleClickAdd} />
       <Hashtag />
-      <Checkbox id="show" value="show" content="Mostrar Eventos" />
+      <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleCLickRemove} />
         <ProfileUser />
