@@ -4,7 +4,7 @@ import "./App.css";
 import { LayerDark } from "./objects/LayerDark";
 import { InputCheckbox } from "./objects/InputCheckbox";
 import { Header } from "./components/Header";
-import { Hashtag } from "./components/Hashtag";
+import { HashtagGame } from "./components/HashtagGame";
 import { HeaderInternal } from "./components/HeaderInternal";
 import { ProfileUser } from "./components/ProfileUser";
 
@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <main className="app">
       <Header onClick={handleClickAdd} />
-      <Hashtag />
+      <HashtagGame />
       <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleCLickRemove} />

@@ -3,9 +3,9 @@ import "./styles.css";
 import { CardGame } from "../../objects/CardGame";
 import { PlayerGame } from "../../objects/PlayerGame";
 
-export const Hashtag = () => (
+export const HashtagGame = () => (
   <CardGame>
-    <ul className="hashtag">
+    <ul className="hashtag-game">
       <li className="item"></li>
       <li className="item">
         <PlayerGame player="o" />
