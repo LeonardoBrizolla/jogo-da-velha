@@ -1,11 +1,11 @@
 import "./styles.css";
 
 import { InputGame } from "../InputGame";
-import { Label } from "../Label";
+import { LabelGame } from "../LabelGame";
 
 export const InputCheckbox = ({ id = "", value = "", content = "" }) => (
   <>
     <InputGame id={id} value={value} type="checkbox" />
-    <Label htmlFor={id} content={content} />
+    <LabelGame htmlFor={id} content={content} />
   </>
 );
