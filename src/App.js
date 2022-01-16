@@ -8,7 +8,7 @@ import { Hashtag } from './components/Hashtag';
 import { HeaderInternal } from './components/HeaderInternal';
 import { ProfileUser } from './components/ProfileUser';
 
-const App = () => {
+export const App = () => {
   const [activeAbout, setActiveAbout] = useState('');
 
   const handleClickAdd = () => setActiveAbout('-active');
@@ -26,4 +26,3 @@ const App = () => {
     </main>
   );
 };
-export default App;

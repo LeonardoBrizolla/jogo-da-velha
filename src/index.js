@@ -7,6 +7,6 @@ import './styles/settings/sizes.css';
 import './styles/generic/reset.css';
 import './styles/elements/base.css';
 
-import App from './App';
+import { App } from './App';
 
 ReactDOM.render(<App />, document.querySelector('#root'));
