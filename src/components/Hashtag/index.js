@@ -1,35 +1,35 @@
 import "./styles.css";
 
 import { CardGame } from "../../objects/CardGame";
-import { Player } from "../../objects/Player";
+import { PlayerGame } from "../../objects/PlayerGame";
 
 export const Hashtag = () => (
   <CardGame>
     <ul className="hashtag">
       <li className="item"></li>
       <li className="item">
-        <Player player="o" />
+        <PlayerGame player="o" />
       </li>
       <li className="item">
-        <Player player="x" />
+        <PlayerGame player="x" />
       </li>
       <li className="item">
-        <Player player="o" />
+        <PlayerGame player="o" />
       </li>
       <li className="item">
-        <Player player="x" />
+        <PlayerGame player="x" />
       </li>
       <li className="item">
-        <Player player="o" />
+        <PlayerGame player="o" />
       </li>
       <li className="item">
-        <Player player="x" />
+        <PlayerGame player="x" />
       </li>
       <li className="item">
-        <Player player="o" />
+        <PlayerGame player="o" />
       </li>
       <li className="item">
-        <Player player="x" />
+        <PlayerGame player="x" />
       </li>
     </ul>
   </CardGame>
