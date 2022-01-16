@@ -1,10 +1,10 @@
-import './styles.css';
+import "./styles.css";
 
-import { Card } from '../../objects/Card';
-import { Player } from '../../objects/Player';
+import { CardGame } from "../../objects/CardGame";
+import { Player } from "../../objects/Player";
 
 export const Hashtag = () => (
-  <Card>
+  <CardGame>
     <ul className="hashtag">
       <li className="item"></li>
       <li className="item">
@@ -32,5 +32,5 @@ export const Hashtag = () => (
         <Player player="x" />
       </li>
     </ul>
-  </Card>
+  </CardGame>
 );
