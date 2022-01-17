@@ -1,5 +1,5 @@
 import "./styles.css";
 
-export const TagGame = ({ content }) => (
-  <output className="tag-game">{content}</output>
+export const TagGame = ({ content, className = "" }) => (
+  <output className={`tag-game ${className}`}>{content}</output>
 );
