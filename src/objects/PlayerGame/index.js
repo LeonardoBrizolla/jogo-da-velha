@@ -3,7 +3,7 @@ import "./styles.css";
 import playerXSVG from "../../img/player-x.svg";
 import playerOSVG from "../../img/player-o.svg";
 
-export const PlayerGame = ({ player }) => {
+export const PlayerGame = ({ player = false }) => {
   const players = [];
 
   players["x"] = playerXSVG;
@@ -11,7 +11,9 @@ export const PlayerGame = ({ player }) => {
 
   return (
     <button className="player-game">
-      <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />
+      {player && (
+        <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />
+      )}
     </button>
   );
 };

@@ -6,30 +6,32 @@ import { PlayerGame } from "../../objects/PlayerGame";
 export const HashtagGame = () => (
   <CardGame>
     <ul className="hashtag-game">
-      <li className="item"></li>
       <li className="item">
-        <PlayerGame player="o" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="x" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="o" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="x" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="o" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="x" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="o" />
+        <PlayerGame />
       </li>
       <li className="item">
-        <PlayerGame player="x" />
+        <PlayerGame />
+      </li>
+      <li className="item">
+        <PlayerGame />
       </li>
     </ul>
   </CardGame>
