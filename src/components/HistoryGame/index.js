@@ -1,4 +1,5 @@
 import { TagGame } from "../../objects/TagGame";
+import "./styles.css";
 
 export const HistoryGame = () => (
   <ol className="history-game">
