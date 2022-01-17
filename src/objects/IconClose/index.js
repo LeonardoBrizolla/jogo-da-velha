@@ -1,7 +1,7 @@
-import './styles.css';
+import "./styles.css";
 
 export const IconClose = ({ onClick }) => (
-  <a href="#TODO" className="icon-close" onClick={onClick}>
+  <a href="#main" className="icon-close" onClick={onClick}>
     <span className="content">Fechar</span>
   </a>
 );

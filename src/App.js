@@ -15,7 +15,7 @@ export const App = () => {
   const handleCLickRemove = () => setActiveAbout("");
 
   return (
-    <main className="app">
+    <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
       <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
