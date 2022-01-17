@@ -2,4 +2,5 @@
   background-color: var(--color-zero);
   padding: var(--spacing-very-small) var(--spacing-medium);
   border-radius: 2em;
+  line-height: 27px;
 }
