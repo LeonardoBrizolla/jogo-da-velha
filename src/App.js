@@ -17,9 +17,9 @@ export const App = () => {
   const handleCLickRemove = () => setActiveAbout("");
 
   const handleClickInputCheckbox = () =>
-    activeHistoryGame
-      ? setActiveHistoryGame("")
-      : setActiveHistoryGame("-active");
+    setActiveHistoryGame((oldState) =>
+      oldState === "-active" ? "" : "-active"
+    );
 
   return (
     <main id="main" className="app">
