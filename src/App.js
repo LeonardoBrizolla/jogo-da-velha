@@ -11,16 +11,27 @@ import { ProfileUser } from "./components/ProfileUser";
 
 export const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
+  const [activeHistoryGame, setActiveHistoryGame] = useState("");
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleCLickRemove = () => setActiveAbout("");
+
+  const handleClickInputCheckbox = () =>
+    activeHistoryGame
+      ? setActiveHistoryGame("")
+      : setActiveHistoryGame("-active");
 
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
-      <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
-      <HistoryGame />
+      <InputCheckbox
+        id="show"
+        value="show"
+        content="Mostrar Eventos"
+        onClick={handleClickInputCheckbox}
+      />
+      <HistoryGame className={activeHistoryGame} />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleCLickRemove} />
         <ProfileUser />

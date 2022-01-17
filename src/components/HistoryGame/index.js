@@ -1,8 +1,8 @@
 import { TagGame } from "../../objects/TagGame";
 import "./styles.css";
 
-export const HistoryGame = () => (
-  <ol className="history-game">
+export const HistoryGame = ({ className = "" }) => (
+  <ol className={`history-game ${className}`}>
     <li className="action">
       <TagGame content="Adicionou X" />
     </li>
