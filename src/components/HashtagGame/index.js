@@ -17,18 +17,22 @@ export const HashtagGame = () => {
     { id: 9, content: '' },
   ]);
 
-  const handleClick = () => {
-    console.log('Next player: ' + nextPlayer);
+  const handleClick = (id) => {
+    setPlayers((oldPlayers) =>
+      oldPlayers.map((oldPlayer) =>
+        oldPlayer.id === id ? { id, content: nextPlayer } : oldPlayer
+      )
+    );
 
     setNextPlayer((oldPlayer) => (oldPlayer === 'x' ? 'o' : 'x'));
   };
 
   return (
     <CardGame>
-      <ul className="hashtag-game" onClick={handleClick}>
-        {players.map((player) => (
-          <li className="item" key={player.id}>
-            <PlayerGame player={player.content} />
+      <ul className="hashtag-game">
+        {players.map(({ id, content }) => (
+          <li key={id} onClick={() => handleClick(id)} className="item">
+            <PlayerGame id={id} content={content} />
           </li>
         ))}
       </ul>
