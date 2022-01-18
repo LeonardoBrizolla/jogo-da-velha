@@ -1,18 +1,18 @@
-import { useState } from "react";
-import "./styles.css";
+import { useState } from 'react';
+import './styles.css';
 
-import playerXSVG from "../../img/player-x.svg";
-import playerOSVG from "../../img/player-o.svg";
+import playerXSVG from '../../img/player-x.svg';
+import playerOSVG from '../../img/player-o.svg';
 
-export const PlayerGame = ({ player = "" }) => {
+export const PlayerGame = ({ player = '' }) => {
   const [statePlayer, setStatePlayer] = useState(player);
 
   const players = [];
 
-  players["x"] = playerXSVG;
-  players["o"] = playerOSVG;
+  players['x'] = playerXSVG;
+  players['o'] = playerOSVG;
 
-  const handleClick = () => setStatePlayer("x");
+  const handleClick = () => setStatePlayer(player);
 
   return (
     <button onClick={handleClick} className="player-game">
