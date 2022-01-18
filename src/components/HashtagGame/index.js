@@ -31,7 +31,11 @@ export const HashtagGame = () => {
     <CardGame>
       <ul className="hashtag-game">
         {players.map(({ id, content }) => (
-          <li key={id} onClick={() => handleClick(id)} className="item">
+          <li
+            key={id}
+            className="item"
+            onClick={() => content === '' && handleClick(id)}
+          >
             <PlayerGame id={id} content={content} />
           </li>
         ))}
