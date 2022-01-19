@@ -1,26 +1,27 @@
-import { useState } from "react";
-import "./App.css";
+import { useState } from 'react';
+import './App.css';
 
-import { LayerDark } from "./objects/LayerDark";
-import { InputCheckbox } from "./objects/InputCheckbox";
-import { HistoryGame } from "./components/HistoryGame";
-import { HeaderGame } from "./components/HeaderGame";
-import { HashtagGame } from "./components/HashtagGame";
-import { HeaderInternal } from "./components/HeaderInternal";
-import { ProfileUser } from "./components/ProfileUser";
+import { LayerDark } from './objects/LayerDark';
+import { InputCheckbox } from './objects/InputCheckbox';
+import { HistoryGame } from './components/HistoryGame';
+import { HeaderGame } from './components/HeaderGame';
+import { HashtagGame } from './components/HashtagGame';
+import { HeaderInternal } from './components/HeaderInternal';
+import { ProfileUser } from './components/ProfileUser';
 
 export const App = () => {
-  const [activeAbout, setActiveAbout] = useState("");
+  const [activeAbout, setActiveAbout] = useState('');
+  const history = ['Adicionou X', 'Adicionou O', 'Adicionou X'];
 
-  const handleClickAdd = () => setActiveAbout("-active");
-  const handleCLickRemove = () => setActiveAbout("");
+  const handleClickAdd = () => setActiveAbout('-active');
+  const handleCLickRemove = () => setActiveAbout('');
 
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
       <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
-      <HistoryGame />
+      <HistoryGame history={history} />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleCLickRemove} />
         <ProfileUser />
