@@ -4,11 +4,33 @@
   align-items: center;
 }
 
+.header-game > .logo-collab {
+  width: 8rem;
+}
+
 .header-game > .about-link {
   margin-left: auto;
   margin-right: 10px;
 }
 
 .header-game > .menu-game {
-  width: 25px;
+  width: 1.56rem;
+}
+
+@media (min-width: 740px) {
+  .header-game {
+    background-color: var(--color-tenth);
+  }
+
+  .header-game > .logo-collab {
+    width: auto;
+  }
+
+  .header-game > .about-link {
+    font-size: var(--size-medium);
+  }
+
+  .header-game > .menu-game {
+    width: 1.8rem;
+  }
 }
