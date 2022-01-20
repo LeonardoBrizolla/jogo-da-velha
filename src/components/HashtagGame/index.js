@@ -3,7 +3,7 @@ import './styles.css';
 import { CardGame } from '../../objects/CardGame';
 import { PlayerGame } from '../../objects/PlayerGame';
 
-export const HashtagGame = () => {
+export const HashtagGame = ({ callback }) => {
   const [nextPlayer, setNextPlayer] = useState('x');
   const [players, setPlayers] = useState([
     { id: 1, content: '' },
@@ -23,6 +23,8 @@ export const HashtagGame = () => {
         oldPlayer.id === id ? { id, content: nextPlayer } : oldPlayer
       )
     );
+
+    callback(nextPlayer);
 
     setNextPlayer((oldPlayer) => (oldPlayer === 'x' ? 'o' : 'x'));
   };

@@ -11,15 +11,18 @@ import { ProfileUser } from './components/ProfileUser';
 
 export const App = () => {
   const [activeAbout, setActiveAbout] = useState('');
-  const history = ['Adicionou X', 'Adicionou O', 'Adicionou X'];
+  const [history, setHistory] = useState([]);
 
   const handleClickAdd = () => setActiveAbout('-active');
   const handleCLickRemove = () => setActiveAbout('');
+  const handleClickAddHistory = (player) => {
+    setHistory((state) => [...state, `Adicionou ${player.toUpperCase()}`]);
+  };
 
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame />
+      <HashtagGame callback={handleClickAddHistory} />
       <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
       <HistoryGame history={history} />
       <LayerDark className={activeAbout}>
