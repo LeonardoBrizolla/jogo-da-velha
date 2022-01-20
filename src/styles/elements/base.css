@@ -1,4 +1,6 @@
 body {
   background-color: var(--color-second);
   font-family: 'Montserrat', sans-serif;
+
+  min-width: 290px;
 }
