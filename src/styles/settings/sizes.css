@@ -1,5 +1,6 @@
 :root {
-  --size-small: 0.8rem;
-  --size-medium: 1.12rem;
-  --size-big: 1.37rem;
+  --size-small: 0.875rem; /* 14px */
+  --size-medium: 1.125rem; /* 18px */
+  --size-big: 1.375rem; /* 22px */
+  --size-very-big: 2.375rem; /* 38px */
 }
