@@ -5,7 +5,26 @@
   padding: var(--spacing-medium) var(--spacing-big);
 }
 
+.header-internal > .logo-collab {
+  width: 8.12rem;
+}
+
 .header-internal > .about-link {
   margin-left: auto;
   margin-right: var(--spacing-small);
+}
+
+@media (min-width: 740px) {
+  .header-internal {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-internal > .logo-collab {
+    width: auto;
+  }
+
+  .header-internal > .about-link {
+    font-size: var(--size-medium);
+  }
 }
