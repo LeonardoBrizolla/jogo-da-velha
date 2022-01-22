@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-game > .logo-collab {
-  width: 8rem;
+  width: 130px;
 }
 
 .header-game > .about-link {
@@ -14,7 +16,7 @@
 }
 
 .header-game > .menu-game {
-  width: 1.56rem;
+  width: 25px;
 }
 
 @media (min-width: 740px) {
@@ -31,6 +33,6 @@
   }
 
   .header-game > .menu-game {
-    width: 1.8rem;
+    width: 30px;
   }
 }

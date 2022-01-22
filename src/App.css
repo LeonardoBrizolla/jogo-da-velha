@@ -7,7 +7,7 @@
 
 .app > .header-game {
   width: 90vw;
-  margin: 20px auto 100px;
+  margin: 0 auto 85px;
 }
 
 .app > .card-game {
@@ -15,8 +15,9 @@
   box-sizing: border-box;
   width: 90vw;
   height: 90vw;
-  padding: 15px;
   margin-bottom: 40px;
+  max-width: 330px;
+  max-height: 330px;
 }
 
 .app > .label-game {
@@ -33,9 +34,11 @@
 
 @media (min-width: 740px) {
   .app > .header-game {
-    width: 100%;
-    margin: 0 0 6.25rem;
-    padding: 1rem 10%;
     box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
