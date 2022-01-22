@@ -2,6 +2,7 @@
   color: var(--color-fourth);
   font-size: var(--size-small);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .label-game::selection {

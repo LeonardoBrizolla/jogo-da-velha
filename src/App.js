@@ -3,6 +3,7 @@ import './App.css';
 
 import { LayerDark } from './objects/LayerDark';
 import { InputCheckbox } from './objects/InputCheckbox';
+import { HashtagHistoryWrapper } from './objects/HashtagHistoryWrapper';
 import { HistoryGame } from './components/HistoryGame';
 import { HeaderGame } from './components/HeaderGame';
 import { HashtagGame } from './components/HashtagGame';
@@ -22,9 +23,11 @@ export const App = () => {
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame callback={handleClickAddHistory} />
-      <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
-      <HistoryGame history={history} />
+      <HashtagHistoryWrapper>
+        <HashtagGame callback={handleClickAddHistory} />
+        <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
+        <HistoryGame history={history} />
+      </HashtagHistoryWrapper>
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleCLickRemove} />
         <ProfileUser />
