@@ -1,3 +1,8 @@
-export const HashtagHistoryWrapper = ({ children }) => (
-  <div className="hashtagHistory-wrapper">{children}</div>
+export const HashtagHistoryWrapper = ({
+  children,
+  isActiveHistory = false,
+}) => (
+  <div className={`hashtagHistory-wrapper ${isActiveHistory ? '-active' : ''}`}>
+    {children}
+  </div>
 );

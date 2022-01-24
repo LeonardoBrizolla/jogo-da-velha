@@ -69,12 +69,12 @@
     opacity: 0;
     display: block;
     transition: transform 150ms linear;
+    position: absolute;
+    z-index: -1;
   }
 
   .app > .hashtagHistory-wrapper.-active > .history-game {
-    position: absolute;
     display: block;
-    z-index: -1;
     opacity: 1;
     transform: translateX(200%);
   }
