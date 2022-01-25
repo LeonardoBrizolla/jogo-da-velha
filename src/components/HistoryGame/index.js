@@ -1,16 +1,11 @@
 import { TagGame } from '../../objects/TagGame';
 import './styles.css';
 
-export const HistoryGame = ({ history }) => {
-  const changeHistory = () => console.log('Hi');
-
+export const HistoryGame = ({ history, onClick }) => {
   return (
     <ol className="history-game">
-      <li className="action">
-        <TagGame content="Start" />
-      </li>
       {history.map((content, key) => (
-        <li key={key} className="action" onClick={changeHistory}>
+        <li key={key} className="action" onClick={() => onClick(key)}>
           <TagGame content={content} />
         </li>
       ))}
