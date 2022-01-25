@@ -1,5 +1,6 @@
 .history-game > .action {
   margin-bottom: var(--spacing-medium);
+  cursor: pointer;
 }
 
 .history-game .tag-game {
